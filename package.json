@@ -10,9 +10,8 @@
   "main": "main.js",
   "scripts": {
     "start": "NODE_ENV=development webpack serve --hot --config webpack.dev.config.js",
-    "prod": "NODE_ENV=production webpack --config webpack.build.config.js && electron .",
-    "build": "NODE_ENV=production webpack --config webpack.build.config.js",
-    "package": "npm run build && electron-packager ./ --out=./release-builds"
+    "prod": "webpack --config webpack.build.config.js && electron .",
+    "package": "webpack --config webpack.build.config.js && electron-packager ./ --out=./release-builds"
   },
   "dependencies": {
     "react": "^17.0.1",
