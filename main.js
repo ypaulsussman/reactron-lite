@@ -48,7 +48,9 @@ function createMainWindow() {
     // }
   });
 
-  mainWindow.on("closed", () => (mainWindow = null));
+  mainWindow.on("closed", () => {
+    mainWindow = null;
+  });
 }
 
 app.on("ready", createMainWindow);

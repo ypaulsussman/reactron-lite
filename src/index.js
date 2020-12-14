@@ -1,5 +1,6 @@
-import React from 'react'
-import { render } from 'react-dom'
-import App from './components/App'
+import React from "react";
+import { render } from "react-dom";
+import App from "./components/App/App.jsx";
 
-render(<App />, document.getElementById('app'))
+// eslint-disable-next-line no-undef, react/jsx-filename-extension
+render(<App />, document.getElementById("app"));

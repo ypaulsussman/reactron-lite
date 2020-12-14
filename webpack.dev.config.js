@@ -11,16 +11,22 @@ module.exports = {
       },
       {
         test: /\.jsx?$/,
-        use: [{ loader: "babel-loader" }],
+        use: [{ loader: "babel-loader" }, { loader: "eslint-loader" }],
       },
       {
         test: /\.(jpe?g|png|gif)$/,
-        use: [{ loader: "file-loader?name=img/[name]__[hash:base64:5].[ext]" }],
+        use: [
+          {
+            loader: "file-loader?name=img/[name]__[hash:base64:5].[ext]",
+          },
+        ],
       },
       {
         test: /\.(eot|svg|ttf|woff|woff2)$/,
         use: [
-          { loader: "file-loader?name=font/[name]__[hash:base64:5].[ext]" },
+          {
+            loader: "file-loader?name=font/[name]__[hash:base64:5].[ext]",
+          },
         ],
       },
     ],
