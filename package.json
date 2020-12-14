@@ -14,7 +14,6 @@
     "package": "webpack --config webpack.build.config.js && electron-packager ./ --out=./release-builds"
   },
   "dependencies": {
-    "electron": "^11.1.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
   },
@@ -25,6 +24,7 @@
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.2.2",
     "css-loader": "^5.0.1",
+    "electron": "^11.1.0",
     "electron-devtools-installer": "^3.1.1",
     "electron-packager": "^15.2.0",
     "eslint": "^7.2.0",
@@ -38,6 +38,7 @@
     "eslint-plugin-react-hooks": "^4.0.0",
     "file-loader": "^6.2.0",
     "prettier": "^2.2.1",
+    "react-devtools": "^4.10.1",
     "style-loader": "^2.0.0",
     "webpack": "^5.10.1",
     "webpack-cli": "^4.2.0",

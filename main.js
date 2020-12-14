@@ -1,5 +1,6 @@
 const path = require("path");
 const url = require("url");
+// eslint-disable-next-line import/no-extraneous-dependencies
 const { app, BrowserWindow } = require("electron");
 
 const isDev = process.env.NODE_ENV === "development";
@@ -32,20 +33,6 @@ function createMainWindow() {
 
   mainWindow.once("ready-to-show", () => {
     mainWindow.show();
-
-    // TODO: currently broken on electron 9+; explore fix via
-    // https://github.com/electron/electron/issues/23662#issuecomment-729291277
-    // if (isDev) {
-    //   const {
-    //     default: installExtension,
-    //     REACT_DEVELOPER_TOOLS,
-    //   } = require("electron-devtools-installer");
-
-    //   installExtension(REACT_DEVELOPER_TOOLS).catch((err) =>
-    //     console.log("Error loading React DevTools: ", err)
-    //   );
-    //   mainWindow.webContents.openDevTools();
-    // }
   });
 
   mainWindow.on("closed", () => {
