@@ -49,7 +49,3 @@ npm-debug.log*
 .DS_Store
 Thumbs.db
 ehthumbs.db
-
-# Windows shortcuts #
-#####################
-*.lnk
